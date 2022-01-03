@@ -132,3 +132,26 @@ form {
     background-color: rgb(170, 219, 219);
     color: #928dab;
 }
+
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 50%;
+    }
+    .box__wrapper {
+        min-width: 250px;
+    }
+    .box__wrapper header {
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 351px) and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    .box__wrapper {
+        min-width: 250px;
+    }
+    .box__wrapper header {
+        font-size: 1.7rem;
+    }
+}
