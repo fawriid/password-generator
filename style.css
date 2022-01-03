@@ -59,8 +59,22 @@ body {
     padding: 0.5rem;
     opacity: 0;
     transition: all 0.3s ease;
+    animation: boom 2s infinite;
+}
+@keyframes boom {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 .box__wrapper header:hover .copy__btn {
+    animation: none;
     opacity: 1;
     cursor: pointer;
 }
