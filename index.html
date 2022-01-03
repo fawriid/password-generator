@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,45 @@
     <link rel="stylesheet" href="/style.css">
     <title>Pass Generator</title>
 </head>
+
 <body>
-    
+
+    <div class="box__wrapper">
+        <header>
+            <div class="password__display">
+
+            </div>
+            <button class="copy__btn" id="copy-btn">
+
+            </button>
+        </header>
+        <main>
+            <form>
+                <div class="option__box">
+                    <label for="length">length: </label>
+                    <input type="number" name="" id="lenght" min="8" max="20">
+                </div>
+                <div class="option__box">
+                    <label for="uppercase">including UPPERCASE </label>
+                    <input type="checkbox" name="" id="uppercase">
+                </div>
+                <div class="option__box">
+                    <label for="lowercase">including lowercase</label>
+                    <input type="checkbox" name="" id="lowercase">
+                </div>
+                <div class="option__box">
+                    <label for="numbers">including numbers</label>
+                    <input type="checkbox" name="" id="numbers">
+                </div>
+                <div class="option__box">
+                    <label for="symbols">including symbols</label>
+                    <input type="checkbox" name="" id="symbols">
+                </div>
+            </form>
+        </main>
+    </div>
 
     <script src="/script.js"></script>
 </body>
+
 </html>
