@@ -1,0 +1,117 @@
+/* BASICS */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Noto Serif", serif;
+    font-size: 1.7rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5329a0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #2a0845,
+        #4f23a1
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #2a0845,
+        #4c209c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    letter-spacing: 1px;
+}
+/* CONTENT */
+.box__wrapper {
+    min-width: 400px;
+    background-color: rgb(38, 13, 63);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.5);
+}
+/* HEADER */
+.box__wrapper header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: #8f6ad4;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.4),
+        1px 1px 10px rgba(256, 256, 256, 0.07);
+    margin: 0.5rem 0 2rem;
+}
+.copy__btn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.box__wrapper header:hover .copy__btn {
+    opacity: 1;
+    cursor: pointer;
+}
+/* MAIN */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0;
+}
+.option__box input,
+.option__box label {
+    padding: 0.7rem 0;
+    cursor: pointer;
+}
+.option__box input[type="number"] {
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    padding: 0.25rem 1rem 0.15rem;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+}
+.generate__btn {
+    width: 100%;
+    display: block;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: rgb(170, 219, 219);
+    padding: 1rem 1rem;
+    background: #928dab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #928dab
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #928dab
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 0.3s ease;
+}
+.generate__btn:hover {
+    background-color: rgb(170, 219, 219);
+    color: #928dab;
+}
